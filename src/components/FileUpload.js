@@ -56,24 +56,28 @@ function FileUpload() {
 
     return (
         <div>
-            <input type="file" accept=".pdf" onChange={handleFileChange} />
-            <input
-                type="text"
-                placeholder="Enter URL"
-                value={url}
-                onChange={handleUrlChange}
-            />
-            <input
-                 type="email"
-                placeholder="Enter email"
-                value={email}
-                onChange={handleEmailChange}
-            />
-            <button onClick={handleCheck}>Check</button>
+            <div class="resume-upload-container">
+                <input type="file" accept=".pdf" id="resumeInput" onChange={handleFileChange} />
+                <label htmlFor="resumeInput" className="btn">Upload PDF</label>
 
-            <div id="result">
-                <p>Result:</p>
-                <div>{result}</div> {/* Display the result here */}
+                <input
+                    type="text"
+                    placeholder="Enter URL"
+                    value={url}
+                    onChange={handleUrlChange}
+                />
+                <input
+                    type="email"
+                    placeholder="Enter email"
+                    value={email}
+                    onChange={handleEmailChange}
+                />
+                <button className="btn" onClick={handleCheck}>Check</button>
+
+                <div id="result">
+                    <p>Result:</p>
+                    <div>{result}</div> {/* Display the result here */}
+                </div>
             </div>
         </div>
     );

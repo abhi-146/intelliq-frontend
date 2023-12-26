@@ -61,3 +61,87 @@
 .navbar a:hover {
   background-color: #555;
 }
+
+/* Resume review */
+#resumeInput {
+  display: none;
+}
+
+.btn{
+  background: #0273e6;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resume-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.resume-upload-container input,
+.resume-upload-container button {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}
+
+
+.resume-upload-container .btn {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+}
+
+.resume-upload-container #result {
+  width: 80%;
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.resume-upload-container #result p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.resume-upload-container #result div {
+  padding: 5px 0;
+}
+
+.resume-container {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.resume-header {
+  background-color: #0073e6;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+}
+
+.resume-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
