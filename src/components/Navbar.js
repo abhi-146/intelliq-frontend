@@ -5,11 +5,16 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/profiles">Profiles</Link>
-        <Link to="/resumeReview">Resume Review</Link>
-        <Link to="/contact-us">Contact Us</Link>
-        <Link to="/Admin">Admin</Link>
+
+        <div className="nav-tag"> IntelliQ</div>
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/profiles">Profiles</Link>
+          <Link to="/resumeReview">Resume Review</Link>
+          <Link to="/contact-us">Contact Us</Link>
+          <Link to="/Admin">Admin</Link>
+        </div>
+
       </nav>
     );
   }

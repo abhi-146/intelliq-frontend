@@ -6,7 +6,6 @@ class Home extends Component {
     return (
       <div className="intelliq-home">
         <header className="intelliq-header">
-          <h1>Welcome to IntelliQ</h1>
           <p>Master your tech interviews with mock sessions from experienced software developers.</p>
         </header>
 
